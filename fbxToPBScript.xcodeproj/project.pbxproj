@@ -7,8 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		305631731EFA883A00192B6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 305631721EFA883A00192B6D /* main.m */; };
+		302E4B521F065475000B6AE7 /* libProtocolBuffers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 302E4B4B1F065465000B6AE7 /* libProtocolBuffers.a */; };
+		305631731EFA883A00192B6D /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 305631721EFA883A00192B6D /* main.mm */; };
+		3056317D1EFA92B300192B6D /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3056317C1EFA88C500192B6D /* libiconv.2.4.0.tbd */; };
+		3056317E1EFA92B300192B6D /* libiconv.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3056317A1EFA88C500192B6D /* libiconv.2.tbd */; };
+		3056317F1EFA92B300192B6D /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3056317B1EFA88C500192B6D /* libiconv.tbd */; };
+		305631871EFA9BCA00192B6D /* Runner.mm in Sources */ = {isa = PBXBuildFile; fileRef = 305631861EFA9BCA00192B6D /* Runner.mm */; };
+		305D11521F06418A00E55B4D /* VerTexCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 305D114D1F06416600E55B4D /* VerTexCount.m */; };
+		30B5C05C1F02939D00A6399F /* Fbxmodel.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B5C05B1F02939D00A6399F /* Fbxmodel.pbobjc.m */; };
+		30F37D401EFBA969006424F9 /* Rain.png in Resources */ = {isa = PBXBuildFile; fileRef = 3056319F1EFA9FDD00192B6D /* Rain.png */; };
+		30F37D411EFBA969006424F9 /* Rain.fbx in Resources */ = {isa = PBXBuildFile; fileRef = 305631A01EFA9FDD00192B6D /* Rain.fbx */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		302E4B4A1F065465000B6AE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 302E4B431F065465000B6AE7 /* ProtocolBuffers_OSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7461B52E0F94FAF800A0C422;
+			remoteInfo = ProtocolBuffers;
+		};
+		302E4B4C1F065465000B6AE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 302E4B431F065465000B6AE7 /* ProtocolBuffers_OSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8BBEA4A6147C727100C4ADB7;
+			remoteInfo = UnitTests;
+		};
+		302E4B4E1F065465000B6AE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 302E4B431F065465000B6AE7 /* ProtocolBuffers_OSX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4487C511A9F8E0200531423;
+			remoteInfo = TestSingleSourceBuild;
+		};
+		302E4B501F06546E000B6AE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 302E4B431F065465000B6AE7 /* ProtocolBuffers_OSX.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 7461B52D0F94FAF800A0C422;
+			remoteInfo = ProtocolBuffers;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3056316D1EFA883A00192B6D /* CopyFiles */ = {
@@ -23,8 +63,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		302E4B431F065465000B6AE7 /* ProtocolBuffers_OSX.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProtocolBuffers_OSX.xcodeproj; path = fbxToPBScript/objectivec/ProtocolBuffers_OSX.xcodeproj; sourceTree = "<group>"; };
 		3056316F1EFA883A00192B6D /* fbxToPBScript */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fbxToPBScript; sourceTree = BUILT_PRODUCTS_DIR; };
-		305631721EFA883A00192B6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		305631721EFA883A00192B6D /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		3056317A1EFA88C500192B6D /* libiconv.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.tbd; path = usr/lib/libiconv.2.tbd; sourceTree = SDKROOT; };
+		3056317B1EFA88C500192B6D /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		3056317C1EFA88C500192B6D /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
+		305631851EFA9BBD00192B6D /* Runner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Runner.h; sourceTree = "<group>"; };
+		305631861EFA9BCA00192B6D /* Runner.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Runner.mm; sourceTree = "<group>"; };
+		3056319F1EFA9FDD00192B6D /* Rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Rain.png; path = ../../../../Downloads/Rain.png; sourceTree = "<group>"; };
+		305631A01EFA9FDD00192B6D /* Rain.fbx */ = {isa = PBXFileReference; lastKnownFileType = file; name = Rain.fbx; path = ../../../../Downloads/Rain.fbx; sourceTree = "<group>"; };
+		305D114C1F06416600E55B4D /* VerTexCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerTexCount.h; sourceTree = "<group>"; };
+		305D114D1F06416600E55B4D /* VerTexCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerTexCount.m; sourceTree = "<group>"; };
+		30B5C05A1F02939D00A6399F /* Fbxmodel.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fbxmodel.pbobjc.h; path = ../../../../Desktop/Fbxmodel.pbobjc.h; sourceTree = "<group>"; };
+		30B5C05B1F02939D00A6399F /* Fbxmodel.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fbxmodel.pbobjc.m; path = ../../../../Desktop/Fbxmodel.pbobjc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +84,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				302E4B521F065475000B6AE7 /* libProtocolBuffers.a in Frameworks */,
+				3056317D1EFA92B300192B6D /* libiconv.2.4.0.tbd in Frameworks */,
+				3056317E1EFA92B300192B6D /* libiconv.2.tbd in Frameworks */,
+				3056317F1EFA92B300192B6D /* libiconv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		302E4B441F065465000B6AE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				302E4B4B1F065465000B6AE7 /* libProtocolBuffers.a */,
+				302E4B4D1F065465000B6AE7 /* UnitTests.xctest */,
+				302E4B4F1F065465000B6AE7 /* libTestSingleSourceBuild.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		305631661EFA883A00192B6D = {
 			isa = PBXGroup;
 			children = (
+				302E4B431F065465000B6AE7 /* ProtocolBuffers_OSX.xcodeproj */,
 				305631711EFA883A00192B6D /* fbxToPBScript */,
 				305631701EFA883A00192B6D /* Products */,
+				305631791EFA88C500192B6D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +125,27 @@
 		305631711EFA883A00192B6D /* fbxToPBScript */ = {
 			isa = PBXGroup;
 			children = (
-				305631721EFA883A00192B6D /* main.m */,
+				30B5C05A1F02939D00A6399F /* Fbxmodel.pbobjc.h */,
+				30B5C05B1F02939D00A6399F /* Fbxmodel.pbobjc.m */,
+				305631721EFA883A00192B6D /* main.mm */,
+				305631851EFA9BBD00192B6D /* Runner.h */,
+				305631861EFA9BCA00192B6D /* Runner.mm */,
+				3056319F1EFA9FDD00192B6D /* Rain.png */,
+				305631A01EFA9FDD00192B6D /* Rain.fbx */,
+				305D114D1F06416600E55B4D /* VerTexCount.m */,
+				305D114C1F06416600E55B4D /* VerTexCount.h */,
 			);
 			path = fbxToPBScript;
+			sourceTree = "<group>";
+		};
+		305631791EFA88C500192B6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3056317C1EFA88C500192B6D /* libiconv.2.4.0.tbd */,
+				3056317A1EFA88C500192B6D /* libiconv.2.tbd */,
+				3056317B1EFA88C500192B6D /* libiconv.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -69,6 +155,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 305631761EFA883A00192B6D /* Build configuration list for PBXNativeTarget "fbxToPBScript" */;
 			buildPhases = (
+				30F37D3F1EFBA960006424F9 /* Resources */,
 				3056316B1EFA883A00192B6D /* Sources */,
 				3056316C1EFA883A00192B6D /* Frameworks */,
 				3056316D1EFA883A00192B6D /* CopyFiles */,
@@ -76,6 +163,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				302E4B511F06546E000B6AE7 /* PBXTargetDependency */,
 			);
 			name = fbxToPBScript;
 			productName = fbxToPBScript;
@@ -106,6 +194,12 @@
 			mainGroup = 305631661EFA883A00192B6D;
 			productRefGroup = 305631701EFA883A00192B6D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 302E4B441F065465000B6AE7 /* Products */;
+					ProjectRef = 302E4B431F065465000B6AE7 /* ProtocolBuffers_OSX.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3056316E1EFA883A00192B6D /* fbxToPBScript */,
@@ -113,16 +207,63 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		302E4B4B1F065465000B6AE7 /* libProtocolBuffers.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libProtocolBuffers.a;
+			remoteRef = 302E4B4A1F065465000B6AE7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		302E4B4D1F065465000B6AE7 /* UnitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UnitTests.xctest;
+			remoteRef = 302E4B4C1F065465000B6AE7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		302E4B4F1F065465000B6AE7 /* libTestSingleSourceBuild.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTestSingleSourceBuild.a;
+			remoteRef = 302E4B4E1F065465000B6AE7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30F37D3F1EFBA960006424F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30F37D401EFBA969006424F9 /* Rain.png in Resources */,
+				30F37D411EFBA969006424F9 /* Rain.fbx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3056316B1EFA883A00192B6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				305631731EFA883A00192B6D /* main.m in Sources */,
+				305D11521F06418A00E55B4D /* VerTexCount.m in Sources */,
+				305631731EFA883A00192B6D /* main.mm in Sources */,
+				305631871EFA9BCA00192B6D /* Runner.mm in Sources */,
+				30B5C05C1F02939D00A6399F /* Fbxmodel.pbobjc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		302E4B511F06546E000B6AE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ProtocolBuffers;
+			targetProxy = 302E4B501F06546E000B6AE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		305631741EFA883A00192B6D /* Debug */ = {
@@ -227,16 +368,39 @@
 		305631771EFA883A00192B6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				DEVELOPMENT_TEAM = 8UB24XC54S;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "/Applications/Autodesk/FBX\\ SDK/2018.1.1/lib/clang/debug/libfbxsdk.dylib";
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"\"/Applications/Autodesk/FBX\\ SDK/2018.1.1/lib/clang/debug/libfbxsdk.a\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "/Applications/Autodesk/FBX\\ SDK/2018.1.1/include \"$(SRCROOT)/fbxToPBScript/objectivec\"";
 			};
 			name = Debug;
 		};
 		305631781EFA883A00192B6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				DEVELOPMENT_TEAM = 8UB24XC54S;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "/Applications/Autodesk/FBX\\ SDK/2018.1.1/lib/clang/debug/libfbxsdk.dylib";
+				LIBRARY_SEARCH_PATHS = "";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-ObjC",
+					"\"/Applications/Autodesk/FBX\\ SDK/2018.1.1/lib/clang/release/libfbxsdk.a\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "/Applications/Autodesk/FBX\\ SDK/2018.1.1/include \"$(SRCROOT)/fbxToPBScript/objectivec\"";
 			};
 			name = Release;
 		};
@@ -259,6 +423,7 @@
 				305631781EFA883A00192B6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
