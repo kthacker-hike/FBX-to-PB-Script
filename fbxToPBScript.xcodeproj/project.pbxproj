@@ -14,9 +14,7 @@
 		3056317F1EFA92B300192B6D /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3056317B1EFA88C500192B6D /* libiconv.tbd */; };
 		305631871EFA9BCA00192B6D /* Runner.mm in Sources */ = {isa = PBXBuildFile; fileRef = 305631861EFA9BCA00192B6D /* Runner.mm */; };
 		305D11521F06418A00E55B4D /* VerTexCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 305D114D1F06416600E55B4D /* VerTexCount.m */; };
-		30B5C05C1F02939D00A6399F /* Fbxmodel.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B5C05B1F02939D00A6399F /* Fbxmodel.pbobjc.m */; };
-		30F37D401EFBA969006424F9 /* Rain.png in Resources */ = {isa = PBXBuildFile; fileRef = 3056319F1EFA9FDD00192B6D /* Rain.png */; };
-		30F37D411EFBA969006424F9 /* Rain.fbx in Resources */ = {isa = PBXBuildFile; fileRef = 305631A01EFA9FDD00192B6D /* Rain.fbx */; };
+		306699AD1F0E52A800A74837 /* Fbxmodel.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 306699AC1F0E528200A74837 /* Fbxmodel.pbobjc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,12 +69,10 @@
 		3056317C1EFA88C500192B6D /* libiconv.2.4.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.2.4.0.tbd; path = usr/lib/libiconv.2.4.0.tbd; sourceTree = SDKROOT; };
 		305631851EFA9BBD00192B6D /* Runner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Runner.h; sourceTree = "<group>"; };
 		305631861EFA9BCA00192B6D /* Runner.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Runner.mm; sourceTree = "<group>"; };
-		3056319F1EFA9FDD00192B6D /* Rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Rain.png; path = ../../../../Downloads/Rain.png; sourceTree = "<group>"; };
-		305631A01EFA9FDD00192B6D /* Rain.fbx */ = {isa = PBXFileReference; lastKnownFileType = file; name = Rain.fbx; path = ../../../../Downloads/Rain.fbx; sourceTree = "<group>"; };
 		305D114C1F06416600E55B4D /* VerTexCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerTexCount.h; sourceTree = "<group>"; };
 		305D114D1F06416600E55B4D /* VerTexCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerTexCount.m; sourceTree = "<group>"; };
-		30B5C05A1F02939D00A6399F /* Fbxmodel.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fbxmodel.pbobjc.h; path = ../../../../Desktop/Fbxmodel.pbobjc.h; sourceTree = "<group>"; };
-		30B5C05B1F02939D00A6399F /* Fbxmodel.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Fbxmodel.pbobjc.m; path = ../../../../Desktop/Fbxmodel.pbobjc.m; sourceTree = "<group>"; };
+		306699AB1F0E528200A74837 /* Fbxmodel.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fbxmodel.pbobjc.h; sourceTree = "<group>"; };
+		306699AC1F0E528200A74837 /* Fbxmodel.pbobjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fbxmodel.pbobjc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,13 +121,11 @@
 		305631711EFA883A00192B6D /* fbxToPBScript */ = {
 			isa = PBXGroup;
 			children = (
-				30B5C05A1F02939D00A6399F /* Fbxmodel.pbobjc.h */,
-				30B5C05B1F02939D00A6399F /* Fbxmodel.pbobjc.m */,
+				306699AB1F0E528200A74837 /* Fbxmodel.pbobjc.h */,
+				306699AC1F0E528200A74837 /* Fbxmodel.pbobjc.m */,
 				305631721EFA883A00192B6D /* main.mm */,
 				305631851EFA9BBD00192B6D /* Runner.h */,
 				305631861EFA9BCA00192B6D /* Runner.mm */,
-				3056319F1EFA9FDD00192B6D /* Rain.png */,
-				305631A01EFA9FDD00192B6D /* Rain.fbx */,
 				305D114D1F06416600E55B4D /* VerTexCount.m */,
 				305D114C1F06416600E55B4D /* VerTexCount.h */,
 			);
@@ -236,8 +230,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30F37D401EFBA969006424F9 /* Rain.png in Resources */,
-				30F37D411EFBA969006424F9 /* Rain.fbx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,10 +240,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306699AD1F0E52A800A74837 /* Fbxmodel.pbobjc.m in Sources */,
 				305D11521F06418A00E55B4D /* VerTexCount.m in Sources */,
 				305631731EFA883A00192B6D /* main.mm in Sources */,
 				305631871EFA9BCA00192B6D /* Runner.mm in Sources */,
-				30B5C05C1F02939D00A6399F /* Fbxmodel.pbobjc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
