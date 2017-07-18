@@ -18,9 +18,9 @@
 @property (nonatomic, readwrite) long *animationsCount;
 @end
 
-int const numNodes = 5;
-NSString * const outputFilePath = @"/Users/kunalthacker/Downloads/pb_files/Bike_1.pb";
-NSString * const inputFilePath = @"/Users/kunalthacker/Downloads/Bike_1.fbx";
+int const numNodes = 7;
+NSString * const outputFilePath = @"/Users/kunalthacker/Downloads/DabangWithSound/dabang_with_sound.pba";
+NSString * const inputFilePath = @"/Users/kunalthacker/Downloads/DabangWithSound/dabang_with_sound.fbx";
 
 @implementation Runner
 // MARK: SDK Loader Methods
@@ -102,6 +102,8 @@ void InitializeSdkObjects(FbxManager*& pManager, FbxScene*& pScene)
 		  lookingFor: (int) nodeNumber {
 	int nodeCopy = nodeNumber;
 	if (node->GetMesh() != nil) {
+		NSString *name = [[NSString alloc] initWithCString:node->GetName() encoding:NSUTF8StringEncoding];
+		[self.names addObject:name];
 		FbxMesh *mesh = node->GetMesh();
 		// Currently assumes that there is only one mesh, but extendeable easily
 		
@@ -227,6 +229,7 @@ void InitializeSdkObjects(FbxManager*& pManager, FbxScene*& pScene)
 	self.indicesCount = (int *) malloc(sizeof(int) * self.nodesCount);
 	self.animationsCount = (long *) malloc(sizeof(long) * self.nodesCount);
 	self.textureCoords = (float **) malloc(sizeof(float *) * self.nodesCount);
+	self.names = [[NSMutableArray alloc] init];
 	
 	double *identity = (double *)malloc(sizeof(double) * 16);
 	identity[0] = 1.0;
@@ -259,6 +262,7 @@ void InitializeSdkObjects(FbxManager*& pManager, FbxScene*& pScene)
 		[node.verticesArray addValues:self.vertices[i] count:self.verticesCount[i]*3];
 		[node.uvCoordsArray addValues:self.textureCoords[i] count:self.verticesCount[i]*3];
 		[node.indicesArray addValues:self.indices[i] count:self.indicesCount[i]];
+		node.name = [self.names objectAtIndex:i];
 		NSMutableArray<FBXModel_node_animationMatrix *> *animations = [[NSMutableArray<FBXModel_node_animationMatrix *> alloc] init];
 		for (int j = 0; j < self.animationsCount[i]; j++) {
 			double *animationMatrix = self.animationMatrices[i][j];

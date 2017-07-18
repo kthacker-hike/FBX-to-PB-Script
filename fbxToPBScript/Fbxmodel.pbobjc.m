@@ -89,6 +89,7 @@ typedef struct FBXModel__storage_ {
 
 @implementation FBXModel_node
 
+@dynamic hasName, name;
 @dynamic verticesArray, verticesArray_Count;
 @dynamic uvCoordsArray, uvCoordsArray_Count;
 @dynamic indicesArray, indicesArray_Count;
@@ -96,6 +97,7 @@ typedef struct FBXModel__storage_ {
 
 typedef struct FBXModel_node__storage_ {
   uint32_t _has_storage_[1];
+  NSString *name;
   GPBFloatArray *verticesArray;
   GPBFloatArray *uvCoordsArray;
   GPBInt32Array *indicesArray;
@@ -108,6 +110,15 @@ typedef struct FBXModel_node__storage_ {
   static GPBDescriptor *descriptor = nil;
   if (!descriptor) {
     static GPBMessageFieldDescription fields[] = {
+      {
+        .name = "name",
+        .dataTypeSpecific.className = NULL,
+        .number = FBXModel_node_FieldNumber_Name,
+        .hasIndex = 0,
+        .offset = (uint32_t)offsetof(FBXModel_node__storage_, name),
+        .flags = GPBFieldRequired,
+        .dataType = GPBDataTypeString,
+      },
       {
         .name = "verticesArray",
         .dataTypeSpecific.className = NULL,
@@ -155,7 +166,7 @@ typedef struct FBXModel_node__storage_ {
                                          flags:GPBDescriptorInitializationFlag_None];
 #if !GPBOBJC_SKIP_MESSAGE_TEXTFORMAT_EXTRAS
     static const char *extraTextFormatInfo =
-        "\001\002\000uvCoords\000";
+        "\001\003\000uvCoords\000";
     [localDescriptor setupExtraTextInfo:extraTextFormatInfo];
 #endif  // !GPBOBJC_SKIP_MESSAGE_TEXTFORMAT_EXTRAS
     [localDescriptor setupContainingMessageClassName:GPBStringifySymbol(FBXModel)];

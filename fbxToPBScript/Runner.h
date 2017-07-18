@@ -21,6 +21,7 @@
 @property (nonatomic, readwrite) double ***animationMatrices;
 @property (nonatomic, readwrite) int nodesCount;
 @property (nonatomic, readwrite) double *identity;
+@property (nonatomic, assign) NSMutableArray* names;
 
 -(void) run;
 @end

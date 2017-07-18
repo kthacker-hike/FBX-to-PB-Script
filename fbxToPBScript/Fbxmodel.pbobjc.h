@@ -72,13 +72,18 @@ typedef GPB_ENUM(FBXModel_FieldNumber) {
 #pragma mark - FBXModel_node
 
 typedef GPB_ENUM(FBXModel_node_FieldNumber) {
-  FBXModel_node_FieldNumber_VerticesArray = 1,
-  FBXModel_node_FieldNumber_UvCoordsArray = 2,
-  FBXModel_node_FieldNumber_IndicesArray = 3,
-  FBXModel_node_FieldNumber_MatricesArray = 4,
+  FBXModel_node_FieldNumber_Name = 1,
+  FBXModel_node_FieldNumber_VerticesArray = 2,
+  FBXModel_node_FieldNumber_UvCoordsArray = 3,
+  FBXModel_node_FieldNumber_IndicesArray = 4,
+  FBXModel_node_FieldNumber_MatricesArray = 5,
 };
 
 @interface FBXModel_node : GPBMessage
+
+@property(nonatomic, readwrite, copy, null_resettable) NSString *name;
+/** Test to see if @c name has been set. */
+@property(nonatomic, readwrite) BOOL hasName;
 
 @property(nonatomic, readwrite, strong, null_resettable) GPBFloatArray *verticesArray;
 /** The number of items in @c verticesArray without causing the array to be created. */

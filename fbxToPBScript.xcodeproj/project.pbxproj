@@ -14,7 +14,7 @@
 		3056317F1EFA92B300192B6D /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3056317B1EFA88C500192B6D /* libiconv.tbd */; };
 		305631871EFA9BCA00192B6D /* Runner.mm in Sources */ = {isa = PBXBuildFile; fileRef = 305631861EFA9BCA00192B6D /* Runner.mm */; };
 		305D11521F06418A00E55B4D /* VerTexCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 305D114D1F06416600E55B4D /* VerTexCount.m */; };
-		306699AD1F0E52A800A74837 /* Fbxmodel.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 306699AC1F0E528200A74837 /* Fbxmodel.pbobjc.m */; };
+		30C3AAC01F18B5A1009417CC /* Fbxmodel.pbobjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 30C3AABF1F18B5A1009417CC /* Fbxmodel.pbobjc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +71,8 @@
 		305631861EFA9BCA00192B6D /* Runner.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Runner.mm; sourceTree = "<group>"; };
 		305D114C1F06416600E55B4D /* VerTexCount.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerTexCount.h; sourceTree = "<group>"; };
 		305D114D1F06416600E55B4D /* VerTexCount.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerTexCount.m; sourceTree = "<group>"; };
-		306699AB1F0E528200A74837 /* Fbxmodel.pbobjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fbxmodel.pbobjc.h; sourceTree = "<group>"; };
-		306699AC1F0E528200A74837 /* Fbxmodel.pbobjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fbxmodel.pbobjc.m; sourceTree = "<group>"; };
+		30C3AABE1F18B5A1009417CC /* Fbxmodel.pbobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fbxmodel.pbobjc.h; sourceTree = "<group>"; };
+		30C3AABF1F18B5A1009417CC /* Fbxmodel.pbobjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fbxmodel.pbobjc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +121,9 @@
 		305631711EFA883A00192B6D /* fbxToPBScript */ = {
 			isa = PBXGroup;
 			children = (
-				306699AB1F0E528200A74837 /* Fbxmodel.pbobjc.h */,
-				306699AC1F0E528200A74837 /* Fbxmodel.pbobjc.m */,
 				305631721EFA883A00192B6D /* main.mm */,
+				30C3AABE1F18B5A1009417CC /* Fbxmodel.pbobjc.h */,
+				30C3AABF1F18B5A1009417CC /* Fbxmodel.pbobjc.m */,
 				305631851EFA9BBD00192B6D /* Runner.h */,
 				305631861EFA9BCA00192B6D /* Runner.mm */,
 				305D114D1F06416600E55B4D /* VerTexCount.m */,
@@ -240,10 +240,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				306699AD1F0E52A800A74837 /* Fbxmodel.pbobjc.m in Sources */,
 				305D11521F06418A00E55B4D /* VerTexCount.m in Sources */,
 				305631731EFA883A00192B6D /* main.mm in Sources */,
 				305631871EFA9BCA00192B6D /* Runner.mm in Sources */,
+				30C3AAC01F18B5A1009417CC /* Fbxmodel.pbobjc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
